@@ -85,7 +85,7 @@ False in 'False'
 
 s1 = "Nice to have it"
 s2 = "here"
-s1 + " " + s2
+print(s1 + " " + s2)
 
 
 # 4. Given this nested list, use indexing to grab the word "hello"
@@ -94,7 +94,7 @@ s1 + " " + s2
 
 
 a = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
-a[3][1][2]
+print(a[3][1][2])
 
 
 # 5. Try to insert above strings s1 and s2 in the list ‘a’ mentioned in que 4, in the
@@ -164,7 +164,7 @@ color_list_3 = set(color_list_1.difference(color_list_2))
 # In[95]:
 
 
-color_list_3
+print(color_list_3)
 
 
 # 8. WAP to find if the given input string is Pangram or not
@@ -187,24 +187,24 @@ else:
 # exam from given dictionary
 # 
 
-# In[24]:
+# In[22]:
 
 
 d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],
 'Marks': [57,87,67,79]}
 a = d['Student']
 b = d['Marks']
-c = b.index(max(b))
-print(a[c])
+c = max(b)
+d = b.index(c)
+print(a[d])
 
 
 
 
 
-# 9. Write a Python program that accepts an integer (n) and computes the value of
-# n+nn+nnn.
+# 9. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
 
-# In[26]:
+# In[1]:
 
 
 n = int(input())
@@ -228,6 +228,116 @@ for i in x:
         digits += 1
 print("LETTERS",letters)
 print("DIGITS",digits)
+
+
+# 10. Write a python program to take input from console in following fashion
+# 23 54 12#98 3 17
+# and generate the corresponding two list having integers inside (not string)
+
+# In[ ]:
+
+
+str1 = input()
+a = str1.index("#")
+a1 = str1[0:a].split()
+a2 = str1[a+1:].split()
+x = [eval(i) for i in a1]
+y = [eval(i) for i in a2]
+print(x)
+print(y)
+print(type(x[0]))
+# l1 = list(str2.split())
+# print(l1)
+#list1 = [int(l1(i)) for i in range(0,l1[a])]
+#list2 = [int(l1(i)) for i in range(l1[a+1],l1(len(l1)))]
+
+
+
+# In[ ]:
+# 11. Write a program that accepts a comma separated sequence of words as input and 
+# prints the words in a comma-separated sequence after sorting them alphabetically.
+
+a = input("Enter the string seperated with comma: ")
+b = a.split(",")
+b.sort()
+",".join(b)
+print(b)
+
+
+
+
+
+# In[ ]:
+# 14. Write a python function which creates a new dictionary of students from a given 
+# Dataset of various subject to a specific subject or topic only.
+
+d = {'Name': ['Akash', 'Soniya', 'Vishakha' , 'Akshay', 'Rahul', 'Vikas'],
+'Subject': ['Python', 'Java', 'Python', 'C', 'Python', 'Java'],
+'Ratings': [8.4, 7.8, 8, 9, 8.2, 5.6]}
+
+i = input()
+x = d["Name"]
+y = d["Subject"]
+z = d["Ratings"]
+a = list(zip(x,y,z))
+print(a)
+
+new_data = {}
+
+       
+
+
+
+
+
+# In[ ]:
+# 15. Define a class with a generator which can iterate the numbers, which are divisible 
+# by 7, between a given range 0 and n.
+
+n = eval(input())
+number_divisible_by_7 = [i for i in range(0,n+1) if i%7==0]
+print(number_divisible_by_7)
+
+
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
