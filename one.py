@@ -246,10 +246,7 @@ y = [eval(i) for i in a2]
 print(x)
 print(y)
 print(type(x[0]))
-# l1 = list(str2.split())
-# print(l1)
-#list1 = [int(l1(i)) for i in range(0,l1[a])]
-#list2 = [int(l1(i)) for i in range(l1[a+1],l1(len(l1)))]
+
 
 
 
