@@ -205,7 +205,7 @@ print(a[d])
 # In[14]:
 
 
-help(c.fromkeys)
+
 
 
 # In[ ]:
