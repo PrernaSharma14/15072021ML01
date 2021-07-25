@@ -187,31 +187,29 @@ else:
 # exam from given dictionary
 # 
 
-# In[22]:
+# In[24]:
 
 
 d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],
 'Marks': [57,87,67,79]}
 a = d['Student']
 b = d['Marks']
-c = max(b)
-d = b.index(c)
-print(a[d])
+c = b.index(max(b))
+print(a[c])
 
 
 
 
 
-# In[14]:
+# 9. Write a Python program that accepts an integer (n) and computes the value of
+# n+nn+nnn.
+
+# In[26]:
 
 
-
-
-
-# In[ ]:
-
-
-
+n = int(input())
+value = n + ((n*10)+n) +((n*100)+(n*10)+n)
+value
 
 
 # 13.  13. Write a program that accepts a sentence and calculate the number of letters and digits.
