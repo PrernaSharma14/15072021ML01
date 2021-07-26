@@ -273,15 +273,17 @@ d = {'Name': ['Akash', 'Soniya', 'Vishakha' , 'Akshay', 'Rahul', 'Vikas'],
 'Ratings': [8.4, 7.8, 8, 9, 8.2, 5.6]}
 
 i = input()
-x = d["Name"]
-y = d["Subject"]
-z = d["Ratings"]
-a = list(zip(x,y,z))
-print(a)
+list1 = list(zip(d['Name'],d['Subject'],d['Ratings']))
+list2 = []
+for j in range(0,len(list1)):
+    if (list1[j][0] == i) or (list1[j][1] == i) or (list1[j][2] == i):
+        list2.append(list1[j])
+x = list(zip(*list2))
+new_data["Name"] = list(x[0])
+new_data["Subject"] = list(x[1])
+new_data["Ratings"] = list(x[2])
+print(new_data)
 
-new_data = {}
-
-       
 
 
 
@@ -304,20 +306,27 @@ print(list(number_divisible_by_7))
 
 # In[ ]:
 
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
+# 16. . A robot moves in a plane starting from the original point (0,0). The robot can 
+# move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot 
+# movement is shown as the following:
+# UP 5
+# DOWN 3
+# LEFT 3
+# RIGHT 2
+# The numbers after the direction are steps. Please write a program to compute the 
+# distance from current position after a sequence of movement and original point. 
+# If the distance is a float, then just print the nearest integer.
+import math
+x = 0
+y = 0
+UP = eval(input("UP: "))
+DOWN = eval(input("DOWN: "))
+LEFT = eval(input("LEFT: "))
+RIGHT = eval(input("RIGHT: "))
+x = x + UP - DOWN
+y = y + RIGHT - LEFT
+distance = int(math.sqrt(x**2 + y**2))
+print(distance)
 
 
 # In[ ]:
