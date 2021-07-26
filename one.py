@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Q.1 Perform following on Python Shell Window
+# 2. Perform following on Python Shell Window
 
 # In[1]:
 
@@ -78,100 +78,72 @@ False in 'False'
 ((True == False) or (False > True)) and (False <= True)
 
 
-# 3. Try to get following output from two python strings
 
 # In[18]:
-
+# 3. Try to get following output from two python strings
 
 s1 = "Nice to have it"
 s2 = "here"
 print(s1 + " " + s2)
 
 
-# 4. Given this nested list, use indexing to grab the word "hello"
 
 # In[19]:
+# 4. Given this nested list, use indexing to grab the word "hello"
 
 
 a = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
 print(a[3][1][2])
 
 
+
+
+# In[21]:
 # 5. Try to insert above strings s1 and s2 in the list ‘a’ mentioned in que 4, in the
 # beginning and end of it respectively
 
-# In[21]:
-
 
 a.insert(0,s1)
-
-
-# In[33]:
-
-
 a += [s2]
-
-
-# In[35]:
-
-
 print(a)
 
 
+
+# In[37]:
 # 6. Write a Python program to print all even numbers from a given numbers list in
 # the same order and stop the printing if any numbers that come after 237 in the
 # sequence.
-
-# In[37]:
 
 
 numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615,
 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949,
 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445,
 742, 717, 958,743, 527]
-
-
-# In[74]:
-
-
 for i in numbers:
     if i!=237:
         if i%2== 0:
             print(i)
     else:
         break
-  
-            
-    
 
 
-# 7. Write a Python program to print out a set containing all the colours from
-# color_list_1 which are not present in color_list_2. 
+ 
 
 # In[93]:
+# 7. Write a Python program to print out a set containing all the colours from
+# color_list_1 which are not present in color_list_2.
 
 
 color_list_1 = set(["White", "Black", "Red"])
 color_list_2 = set(["Red", "Green"])
-
-
-# In[94]:
-
-
 color_list_3 = set(color_list_1.difference(color_list_2))
-
-
-# In[95]:
-
-
 print(color_list_3)
 
 
-# 8. WAP to find if the given input string is Pangram or not
-# 
 
 # In[2]:
-
+# 8. WAP to find if the given input string is Pangram or not
+# 
 
 str1 = input("Enter The string: ")
 str2 = str1.lower()
@@ -183,12 +155,12 @@ else:
     print("Not Pangram") 
 
 
+
+
+# In[22]:
 # 12. Write a Python function to find the name of person obtained highest marks in
 # exam from given dictionary
 # 
-
-# In[22]:
-
 
 d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],
 'Marks': [57,87,67,79]}
@@ -200,23 +172,17 @@ print(a[d])
 
 
 
-
-
-# 9. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
-
 # In[1]:
-
+# 9. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
 
 n = int(input())
 value = n + ((n*10)+n) +((n*100)+(n*10)+n)
 value
 
 
+# In[3]:
 # 13.  13. Write a program that accepts a sentence and calculate the number of letters and digits.
 # 
-
-# In[3]:
-
 
 x = input("Enter the string for calculation: ")
 letters = 0
@@ -230,11 +196,11 @@ print("LETTERS",letters)
 print("DIGITS",digits)
 
 
+
+# In[ ]:
 # 10. Write a python program to take input from console in following fashion
 # 23 54 12#98 3 17
 # and generate the corresponding two list having integers inside (not string)
-
-# In[ ]:
 
 
 str1 = input()
@@ -248,8 +214,6 @@ print(list2)
 
 
 
-
-
 # In[ ]:
 # 11. Write a program that accepts a comma separated sequence of words as input and 
 # prints the words in a comma-separated sequence after sorting them alphabetically.
@@ -259,8 +223,6 @@ b = a.split(",")
 b.sort()
 ",".join(b)
 print(b)
-
-
 
 
 
@@ -286,9 +248,6 @@ print(new_data)
 
 
 
-
-
-
 # In[ ]:
 # 15. Define a class with a generator which can iterate the numbers, which are divisible 
 # by 7, between a given range 0 and n.
@@ -296,12 +255,6 @@ print(new_data)
 n = eval(input())
 number_divisible_by_7 = (i for i in range(0,n+1) if i%7==0)
 print(list(number_divisible_by_7))
-
-
-
-
-
-
 
 
 # In[ ]:
@@ -329,26 +282,8 @@ distance = int(math.sqrt(x**2 + y**2))
 print(distance)
 
 
-# In[ ]:
 
 
 
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+# %%
