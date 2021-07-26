@@ -158,21 +158,6 @@ else:
 
 
 # In[22]:
-# 12. Write a Python function to find the name of person obtained highest marks in
-# exam from given dictionary
-# 
-
-d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],
-'Marks': [57,87,67,79]}
-a = d['Student']
-b = d['Marks']
-c = max(b)
-d = b.index(c)
-print(a[d])
-
-
-
-# In[1]:
 # 9. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
 
 n = int(input())
@@ -180,24 +165,8 @@ value = n + ((n*10)+n) +((n*100)+(n*10)+n)
 value
 
 
-# In[3]:
-# 13.  13. Write a program that accepts a sentence and calculate the number of letters and digits.
-# 
 
-x = input("Enter the string for calculation: ")
-letters = 0
-digits = 0
-for i in x:
-    if i.isalpha():
-        letters += 1
-    elif i.isdigit():
-        digits += 1
-print("LETTERS",letters)
-print("DIGITS",digits)
-
-
-
-# In[ ]:
+# In[1]:
 # 10. Write a python program to take input from console in following fashion
 # 23 54 12#98 3 17
 # and generate the corresponding two list having integers inside (not string)
@@ -213,8 +182,7 @@ print(list1)
 print(list2)
 
 
-
-# In[ ]:
+# In[3]:
 # 11. Write a program that accepts a comma separated sequence of words as input and 
 # prints the words in a comma-separated sequence after sorting them alphabetically.
 
@@ -223,6 +191,40 @@ b = a.split(",")
 b.sort()
 ",".join(b)
 print(b)
+
+
+
+# In[ ]:
+# 12. Write a Python function to find the name of person obtained highest marks in
+# exam from given dictionary
+# 
+
+d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],
+'Marks': [57,87,67,79]}
+a = d['Student']
+b = d['Marks']
+c = max(b)
+d = b.index(c)
+print(a[d])
+
+
+
+
+# In[ ]:
+# 13. Write a program that accepts a sentence and calculate the number of letters and digits.
+# 
+
+x = input("Enter the string for calculation: ")
+letters = 0
+digits = 0
+for i in x:
+    if i.isalpha():
+        letters += 1
+    elif i.isdigit():
+        digits += 1
+print("LETTERS",letters)
+print("DIGITS",digits)
+
 
 
 
@@ -280,9 +282,6 @@ x = x + UP - DOWN
 y = y + RIGHT - LEFT
 distance = int(math.sqrt(x**2 + y**2))
 print(distance)
-
-
-
 
 
 
