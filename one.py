@@ -241,11 +241,11 @@ str1 = input()
 a = str1.index("#")
 a1 = str1[0:a].split()
 a2 = str1[a+1:].split()
-x = [eval(i) for i in a1]
-y = [eval(i) for i in a2]
-print(x)
-print(y)
-print(type(x[0]))
+list1 = [eval(i) for i in a1]
+list2 = [eval(i) for i in a2]
+print(list1)
+print(list2)
+
 
 
 
@@ -292,8 +292,9 @@ new_data = {}
 # by 7, between a given range 0 and n.
 
 n = eval(input())
-number_divisible_by_7 = [i for i in range(0,n+1) if i%7==0]
-print(number_divisible_by_7)
+number_divisible_by_7 = (i for i in range(0,n+1) if i%7==0)
+print(list(number_divisible_by_7))
+
 
 
 
