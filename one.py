@@ -80,7 +80,7 @@ False in 'False'
 
 
 # In[18]:
-# 3. Try to get following output from two python strings
+# 3. Try to get following output from two python strings Nice to have it here
 
 s1 = "Nice to have it"
 s2 = "here"
@@ -187,6 +187,7 @@ print(list2)
 # prints the words in a comma-separated sequence after sorting them alphabetically.
 
 a = input("Enter the string seperated with comma: ")
+
 b = a.split(",")
 b.sort()
 ",".join(b)
@@ -243,10 +244,50 @@ for j in range(0,len(list1)):
     if (list1[j][0] == i) or (list1[j][1] == i) or (list1[j][2] == i):
         list2.append(list1[j])
 x = list(zip(*list2))
+new_data = {}
 new_data["Name"] = list(x[0])
 new_data["Subject"] = list(x[1])
 new_data["Ratings"] = list(x[2])
 print(new_data)
+
+
+# 2nd
+
+
+d = {'Name': ['Akash', 'Soniya', 'Vishakha' , 'Akshay', 'Rahul', 'Vikas'],
+'Subject': ['Python', 'Java', 'Python', 'C', 'Python', 'Java'],
+'Ratings': [8.4, 7.8, 8, 9, 8.2, 5.6]}
+
+i = input()
+list1 = list(zip(d['Name'],d['Subject'],d['Ratings']))
+list2 = []
+for j in range(0,len(list1)):
+    if (list1[j][0] == i) or (list1[j][1] == i) or (list1[j][2] == i):
+        list2.append(list1[j])
+keys = d.keys()
+y = dict(zip(keys, zip(*list2)))
+print(y)
+
+
+
+# 3rd
+
+d = {'Name': ['Akash', 'Soniya', 'Vishakha' , 'Akshay', 'Rahul', 'Vikas'],
+'Subject': ['Python', 'Java', 'Python', 'C', 'Python', 'Java'],
+'Ratings': [8.4, 7.8, 8, 9, 8.2, 5.6]}
+
+i = input()
+keys = d.keys()
+list1 = list(zip(d['Name'],d['Subject'],d['Ratings']))
+list2 = []
+for j in range(0,len(list1)):
+    if (list1[j][0] == i) or (list1[j][1] == i) or (list1[j][2] == i):
+        list2.append(list1[j])
+x = list(zip(*list2))
+list3 = [list(x[0]),list(x[1]),list(x[2])]
+y = dict(zip(keys, list3))
+print(y)
+
 
 
 
