@@ -36,6 +36,6 @@ def click():
     email.set('')
     phn.set('')
 
-tk.Button(app,text = "Submit", command = click).place(x=25,y=200)
+tk.Button(app,text = "Submit", command = click).place(x=90,y=200)
 
 app.mainloop()
